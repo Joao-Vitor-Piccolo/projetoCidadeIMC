@@ -12,6 +12,17 @@ function App() {
   const [mostrarResultado,setMostrarResultado]=useState(false);
 
   //CRIANDO A FUNÇAO CALCULAR IMC
+  const calcularImc=(e)=>{
+    e.preventDefault(); //evita o recarregamento da página
+    if(altura >0 && peso > 0){
+      const imc=peso / (altura*altura);
+      setResultado(imc.toFixed(2)); //arrendonda para 2 casas decimais
+      setMostrarResultado(true);
+    }else{
+      alert("Por favor digite valores valídos");
+      setMostrarResultado(false);
+    }
+  }
 
   
   return (
