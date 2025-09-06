@@ -25,45 +25,4 @@ function App() {
   }
 
   
-  return (
-    <div className="container">
-      <div className="box"> 
-        <Header/>
-        <form>
-          <div>
-            <label htmlfor="altura"><span>Exemplo: 1,80</span></label>
-            <input
-              type="number"
-              id="altura"
-              placeholder="Digite sua altura"
-              value={altura}
-              onChange={(e)=>setAltura(parseFloat(e.target.value))}
-            />
-          </div>
-
-          <div>
-            <label htmlfor="peso"><span>Exemplo: 80</span></label>
-            <input
-              type="number"
-              id="peso"
-              placeholder="Digite seu peso"
-              value={peso}
-              onChange={(e)=>setPeso(parseFloat(e.target.value))}
-            />
-          </div>
-          <button onClick={calcularImc}>Calcular</button>
-        </form>
-      </div>
-      {mostrarResultado &&(
-        <Resultado resultado={resultado}/>
-      )}
-
-      <footer>
-        <p>&copy; 2025 - todos os direitos reservados</p>
-      </footer>
-
-    </div>
-  )
-}
-
-export default App
+  
