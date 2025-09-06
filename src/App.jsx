@@ -2,8 +2,6 @@ import { useState } from "react"
 import Header from "./components/Header"
 import Resultado from "./components/Resultado";
 import './css/estilo.css'
-import './css/global.css'
-
 
 function App() {
 

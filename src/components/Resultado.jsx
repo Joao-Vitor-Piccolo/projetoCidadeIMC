@@ -1,5 +1,3 @@
-import "../css/global.css"
-import "../css/resultado.css"
 import TabelaImc from "./TabelaImc"
 
 //destruct - Desestruturação - acessa os dados de outro componente
